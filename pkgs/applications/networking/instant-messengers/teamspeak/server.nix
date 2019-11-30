@@ -9,8 +9,8 @@ in stdenv.mkDerivation rec {
   src = fetchurl {
     url = "https://files.teamspeak-services.com/releases/server/${version}/teamspeak3-server_linux_${arch}-${version}.tar.bz2";
     sha256 = if stdenv.is64bit
-      then "0vzi0prnqhjxrwlghwgii0rsmml6aa3qk3yv227g9wz5m3b9f10a"
-      else "1nn0fh4s5rmnn27djbsk21jaah1kxyvap9qaf5p4r7cydwr1bzm6";
+      then "d4262f0d51e682c0c645b36c196ad32dae99a1345420cfad00d52f2af109870d"
+      else "6e114c056db62311af849c2ffabf9b0331a52104cf27243e9d8967b157a5c0ab";
   };
 
   buildInputs = [ stdenv.cc.cc ];
